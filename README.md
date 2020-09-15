@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e4a054c5-f34e-4916-82cc-2e7a451c237a/deploy-status)](https://app.netlify.com/sites/money-exchange/deploys)
+
 ## Introduction
 
 This is an currency converter app
