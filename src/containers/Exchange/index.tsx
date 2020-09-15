@@ -214,16 +214,17 @@ export default function Exchange() {
 
   React.useEffect(() => {
     // fetch exchange rates
-    fetchData();
+    if (typeof rates === "undefined") {
+      fetchData();
+    }
 
     // fetch exchanegs rates for every 10s
     const intervalId = window.setInterval(fetchData, 10000);
-
     return () => {
       window.clearInterval(intervalId);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [base, rates]);
+  }, [rates]);
 
   if (isFetchError) {
     return <Error />;
