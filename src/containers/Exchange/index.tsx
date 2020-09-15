@@ -28,9 +28,7 @@ export default function Exchange() {
     currencySymbolsMapping,
     transactions,
   } = useSelector((state: StateShape) => state.pockets);
-  const { rates, base } = useSelector(
-    (state: StateShape) => state.exchangeRates
-  );
+  const { rates } = useSelector((state: StateShape) => state.exchangeRates);
   const { activePocketIndex, passivePocketIndex } = exchange;
 
   /**

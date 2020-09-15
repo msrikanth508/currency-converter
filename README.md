@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is an currency converter app
+A currency converter app
 
 ## Demo
 
